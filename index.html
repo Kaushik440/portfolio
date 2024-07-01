@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: aqua;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        background-color: blue;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: black;
+        font-size: 1rem;
+      }
+      .left {
+        font-size: 1.7rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+      }
+      .firstSection > div {
+        width: 40%;
+      }
+      .leftSection {
+        font-size: 2.7rem;
+        margin: 20px 0px;
+        align-items: center;
+      }
+      .firstSection .btn {
+        background-color: blueviolet;
+        border: 1px solid black;
+        font-size: medium;
+        padding: 2px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .rightSection img {
+        width: 100%;
+      }
+      #element,
+      .purple {
+        color: purple;
+      }
+      main hr {
+        border: 1px solid black;
+      }
+      .contactSection {
+        margin-top: 10px;
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        color: black;
+      }
+      .aboutSection {
+        text-align: center;
+        margin-bottom: 10px;
+        color: black;
+      }
+      .contactSection {
+        color: rgb(32, 31, 31);
+        padding: 10px;
+        align-items: center;
+      }
+      .contactSection h3,
+      .aboutSection h3 {
+        color: rgb(6, 6, 242);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .aboutDetails ,.contactDetail{
+        color: black;
+        text-align: center;
+      }
+      footer {
+        background-color: black;
+        height: 30vh;
+        padding: 20px;
+      }
+      .footer-top {
+        text-align: center;
+      }
+      .footer-top ul li {
+        padding: 5px;
+        list-style: none;
+      }
+      .footer-top ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .footer-top ul li a:hover {
+        color: blue;
+        font-size: 1rem;
+      }
+      .footer-bottom {
+        text-align: center;
+        margin-bottom: 0px;
+        width: 100%;
+      }
+      .footer-bottom p {
+        margin-bottom: 10px;
+      }
+      .leftSection a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kaushik's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/project.html" target="_blank">Projects</a></li>
+            <li><a href="#contact">Contact ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection" id="home">
+        <div class="leftSection">
+          Hi, My Name Is <br /><span class="purple">Kaushik Pandey</span>
+          <div>and I am a Passionate</div>
+          <!-- Element to contain animated typing -->
+          <span id="element"></span><br />
+          <a href="https://github.com/Kaushik440" class="btn"><b>Download Resume</b></a>
+          <a href="https://github.com/Kaushik440" target="_blank" class="btn"><b>Visit GitHub</b></a>
+        </div>
+        <div class="rightSection">
+          <img src="devm.png" alt="image" title="Developer Image" />
+        </div>
+      </section>
+      <hr />
+      <section class="aboutSection" id="about">
+        <h3>About</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          veniam accusantium iure reiciendis sequi nemo reprehenderit ad
+          deserunt nulla, omnis cum distinctio voluptas architecto eveniet
+          fugit sint. Fugit, consequuntur porro ad iste atque natus maxime
+          corporis, laboriosam suscipit error amet quod. Aspernatur a ipsum
+          voluptates earum, commodi dolorum iusto provident.
+        </p>
+        <p class="aboutDetails">
+         <strong>Profile:</strong> Web Developer & Java Programming<br/>
+         <strong>Education:</strong> Bachelor of Computer Application<br/>
+         <strong>Language:</strong> English, Hindi<br/>
+         <strong> Tools:</strong> VS Code, Git &amp; GitHub<br/>
+         <strong>Other Skills:</strong> Excel, &amp; Soft Skills<br/>
+         <strong>Interest:</strong> Traveling, Travel Photography
+        </p>
+      </section>
+      <hr />
+      <section class="contactSection" id="contact">
+        <h3>Contact</h3>
+        Get in Touch I'm always excited to connect with new people. Whether you
+        have a question, a project idea, or just want to say hello, feel free to
+        reach out!
+      <p class="contactDetail">
+          <strong>Email:</strong> <a href="mailto:kaushikpandey440@gmail.com">kaushikpandey440@gmail.com</a><br/><br/>
+          <strong>Phone:</strong> +91 7267928142
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-top">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Kaushik440" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/yourprofile" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Kaushik Pandey. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'MERN Developer'],
+        typeSpeed: 40,
+      });
+    </script>
+  </body>
+</html>
